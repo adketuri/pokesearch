@@ -1,7 +1,7 @@
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
 
-import pokemonReducer from './reducer/reducer';
+import pokemonReducer from './reducers/pokemonReducers';
 
 const middleware = [thunk];
 
