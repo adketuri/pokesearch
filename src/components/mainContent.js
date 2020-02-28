@@ -20,7 +20,7 @@ export default () => {
             <h1>Search Pokemon</h1>
             <div>   
                 <input disabled={loading} value={query} onChange={(e) => setQuery(e.target.value)}/>
-                <button disabled={loading || query.length == 0} onClick={() => dispatch(fetchPokemon(query.toLowerCase()))}>search</button>
+                <button disabled={loading || query.length === 0} onClick={() => dispatch(fetchPokemon(query.toLowerCase()))}>search</button>
             </div>
             <div>{loading && 'Loading...'}</div>
             <Stats pokemon={pokemon} />

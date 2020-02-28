@@ -14,7 +14,7 @@ export function fetchPokemon(id){
             return res;
         })
         .catch(error => {
-            dispatch(getPokemonError(error));
+            dispatch(getPokemonError("Error fetching pokemon"));
         });
     }
 }
